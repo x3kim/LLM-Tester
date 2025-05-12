@@ -1,33 +1,18 @@
-[build-system]
-requires = ["setuptools>=42", "wheel"]
-build-backend = "setuptools.build_meta"
-
 [project]
-name = "hamster-llm-tester"
-version = "0.1.0"
-description = "Desktop application for testing and benchmarking Ollama LLM models"
+name = "hamstern-llm-tester"
+version = "0.1.0-beta"
+description = "A GUI tool for testing and evaluating LLM models through Ollama"
 authors = [
-    {name = "HamsterN", email = ""}
+    {name = "HamsterN Team"}
 ]
+requires-python = ">=3.13"
 readme = "README.md"
-requires-python = ">=3.9"
-classifiers = [
-    "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.9",
-    "Programming Language :: Python :: 3.10",
-    "Programming Language :: Python :: 3.11",
-    "License :: OSI Approved :: MIT License",
-    "Operating System :: OS Independent",
-]
+license = {file = "LICENSE"}
 
-[project.urls]
-"Homepage" = "https://github.com/yourusername/hamster-llm-tester"
-"Bug Tracker" = "https://github.com/yourusername/hamster-llm-tester/issues"
-
-[tool.setuptools]
-package-dir = {"" = "src"}
+[build-system]
+requires = ["setuptools>=42.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-python_files = "test_*.py"
-
+python_files = ["test_*.py"]
