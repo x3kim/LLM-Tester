@@ -51,7 +51,7 @@ A versatile testing tool for evaluating Large Language Models through Ollama. Th
 
 ## ⚙️ Installation
 
-1. Download the latest release from the [Releases](https://github.com/x3kim/HamsterN-LLMTester/releases) page ▶️
+1. Download the latest release from the [Releases](https://github.com/x3kim/LLM-Tester/releases) page ▶️
 2. Extract the zip file to your desired location
 3. Run `Start_LLMTester.bat` to launch the application ▶️
 
