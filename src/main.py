@@ -11,6 +11,11 @@ import asyncio
 import traceback
 from typing import Optional
 
+# Add the src directory to sys.path
+src_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if src_path not in sys.path:
+    sys.path.insert(0, src_path)
+
 # Configure logging before any other imports
 logging.basicConfig(
     level=logging.INFO,
@@ -31,7 +36,7 @@ try:
     from PyQt6.QtCore import QCoreApplication
     import qasync
     
-    from .ui.main_window import MainWindow
+    from src.ui.main_window import MainWindow  # Updated to use absolute import
 except ImportError as e:
     logger.critical(f"Failed to import required modules: {e}")
     print(f"Error: Failed to import required modules: {e}")

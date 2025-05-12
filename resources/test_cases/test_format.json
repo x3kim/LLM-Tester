@@ -1,0 +1,37 @@
+{
+  "name": "Test Format Documentation",
+  "description": "This file documents the format for creating test cases in the LLM tester",
+  "category": "documentation",
+  "tests": [
+    {
+      "id": "example-1",
+      "name": "Example Test Case",
+      "prompt": "This is the input text that will be sent to the model",
+      "expected_result": "This is what you expect in the response",
+      "validation_type": "contains",
+      "parameters": {
+        "temperature": 0.7,
+        "max_tokens": 500,
+        "top_p": 0.95,
+        "frequency_penalty": 0.0,
+        "presence_penalty": 0.0
+      }
+    }
+  ],
+  "metadata": {
+    "created": "2025-05-12",
+    "version": "1.0",
+    "author": "HamsterN-LLMTester",
+    "notes": [
+      "The validation_type field can be one of: 'contains', 'exact_match', 'regex', or 'none'",
+      "For 'contains', the response passes if expected_result is a substring of the actual response",
+      "For 'exact_match', the strings must match exactly (case-sensitive)",
+      "For 'regex', the expected_result should be a valid regex pattern",
+      "For 'none', no validation is performed (use this for creative or open-ended tasks)",
+      "Set expected_result to null when using 'none' validation_type",
+      "The parameters field accepts any Ollama model parameters",
+      "Common parameters include: temperature, max_tokens, top_p, top_k, frequency_penalty, presence_penalty"
+    ]
+  }
+}
+

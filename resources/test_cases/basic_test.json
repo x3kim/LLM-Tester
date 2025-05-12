@@ -1,0 +1,47 @@
+{
+  "name": "Basic Factual Knowledge Test",
+  "description": "Tests the model's ability to recall simple factual information",
+  "category": "knowledge",
+  "tests": [
+    {
+      "id": "fact-1",
+      "name": "Capital of France",
+      "prompt": "What is the capital of France?",
+      "expected_result": "Paris",
+      "validation_type": "contains",
+      "parameters": {
+        "temperature": 0.1,
+        "max_tokens": 100
+      }
+    },
+    {
+      "id": "fact-2",
+      "name": "Chemical Elements",
+      "prompt": "List the first 5 elements in the periodic table.",
+      "expected_result": "Hydrogen, Helium, Lithium, Beryllium, Boron",
+      "validation_type": "contains",
+      "parameters": {
+        "temperature": 0.1,
+        "max_tokens": 200
+      }
+    },
+    {
+      "id": "fact-3",
+      "name": "Basic Math",
+      "prompt": "What is 12 * 15?",
+      "expected_result": "180",
+      "validation_type": "contains",
+      "parameters": {
+        "temperature": 0.0,
+        "max_tokens": 50
+      }
+    }
+  ],
+  "metadata": {
+    "created": "2025-05-12",
+    "version": "1.0",
+    "author": "HamsterN-LLMTester",
+    "recommended_models": ["llama2", "mistral", "phi"]
+  }
+}
+
