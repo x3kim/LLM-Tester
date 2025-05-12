@@ -11,6 +11,38 @@ A versatile testing tool for evaluating Large Language Models through Ollama. Th
 - 🛠 Configurable test parameters
 - 📝 Detailed test results and analysis
 
+## 🖼️ Screenshots
+<table>
+  <tr>
+    <td>
+      <details>
+        <summary>🖥️ Console</summary>
+        <img src="screenshots/console.png" width="300">
+      </details>
+    </td>
+    <td>
+      <details>
+        <summary>📝 Summary</summary>
+        <img src="screenshots/summary.png" width="300">
+      </details>
+    </td>
+    <td>
+      <details>
+        <summary>📂 Details</summary>
+        <img src="screenshots/details.png" width="300">
+      </details>
+    </td>
+    <td>
+      <details>
+        <summary>📊 Comparison</summary>
+        <img src="screenshots/comparison.png" width="300">
+      </details>
+    </td>
+  </tr>
+</table
+
+
+
 ## ✅ Prerequisites
 
 - Windows operating system
